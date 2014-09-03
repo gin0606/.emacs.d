@@ -11,7 +11,13 @@
     (eval-buffer)))
 (quelpa 'flycheck)
 
-;;
+;; init-loader
+(quelpa 'init-loader)
+(require 'init-loader)
+(init-loader-load "~/.emacs.d/init-files")
+(custom-set-variables  '(init-loader-byte-compile t))
+
+;; inits
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (provide 'init)
 ;;; init.el ends here
