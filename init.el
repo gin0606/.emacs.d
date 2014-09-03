@@ -9,7 +9,6 @@
   (with-temp-buffer
     (url-insert-file-contents "https://raw.github.com/quelpa/quelpa/master/bootstrap.el")
     (eval-buffer)))
-(quelpa 'flycheck)
 
 ;; init-loader
 (quelpa 'init-loader)
@@ -18,6 +17,7 @@
 (custom-set-variables  '(init-loader-byte-compile t))
 
 ;; inits
+(quelpa 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (provide 'init)
 ;;; init.el ends here
