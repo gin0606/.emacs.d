@@ -9,5 +9,9 @@
   (with-temp-buffer
     (url-insert-file-contents "https://raw.github.com/quelpa/quelpa/master/bootstrap.el")
     (eval-buffer)))
+(quelpa 'flycheck)
+
+;;
+(add-hook 'after-init-hook #'global-flycheck-mode)
 (provide 'init)
 ;;; init.el ends here
