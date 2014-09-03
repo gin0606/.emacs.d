@@ -30,6 +30,8 @@ tramp
 # AUCTeX auto folder
 /auto/
 
+# quelpa
+/quelpa/
 
 ### https://raw.github.com/github/gitignore/fb35fbd51c046aa44979991038c2c78dae8be3bb/Global/OSX.gitignore
 
