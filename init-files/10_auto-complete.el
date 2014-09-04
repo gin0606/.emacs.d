@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (quelpa 'auto-complete)
-(quelpa 'pos-tip)
+(quelpa 'pos-tip)			; helpを表示するやつの改善版みたいなやつ
 (require 'auto-complete)
 (require 'auto-complete-config)
 (require 'pos-tip)
