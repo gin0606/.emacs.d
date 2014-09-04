@@ -19,5 +19,15 @@
 ;; inits
 (quelpa 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+(custom-set-variables '(initial-frame-alist
+			(quote (
+				(fullscreen . maximized)
+				(foreground-color . "White")
+				(background-color . "Black")
+				(cursor-color . "Gray")
+				(alpha . 90)
+				))))
+(custom-set-variables '(default-frame-alist initial-frame-alist))
 (provide 'init)
 ;;; init.el ends here
