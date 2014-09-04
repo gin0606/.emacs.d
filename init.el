@@ -29,5 +29,21 @@
 				(alpha . 90)
 				))))
 (custom-set-variables '(default-frame-alist initial-frame-alist))
+
+;; 文字とかフォントとかの設定
+(defvar-local font-name "Ricty")
+
+(set-face-attribute 'default nil
+                    :family font-name
+                    :height 135)
+(set-fontset-font (frame-parameter nil 'font)
+                  'japanese-jisx0208
+                  (cons font-name font-name))
+(set-fontset-font (frame-parameter nil 'font)
+                  'japanese-jisx0212
+                  (cons font-name font-name))
+(set-fontset-font (frame-parameter nil 'font)
+                  'katakana-jisx0201
+                  (cons font-name font-name))
 (provide 'init)
 ;;; init.el ends here
