@@ -17,6 +17,9 @@
 (custom-set-variables  '(init-loader-byte-compile t))
 
 ;; inits
+(quelpa 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
+
 (quelpa 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
