@@ -19,6 +19,8 @@
 ;; inits
 (quelpa 'exec-path-from-shell)
 (exec-path-from-shell-initialize)
+(let ((envs '("PATH" "GOPATH")))
+  (exec-path-from-shell-copy-envs envs))
 
 (quelpa 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
