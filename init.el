@@ -33,6 +33,14 @@
 				))))
 (custom-set-variables '(default-frame-alist initial-frame-alist))
 
+(defun other-window-or-split ()
+  "画面分割していないと画面分割する。画面分割されてると他の画面に移動する."
+  (interactive)
+  (when (one-window-p)
+    (split-window-horizontally))
+  (other-window 1))
+(global-set-key (kbd "C-t") 'other-window-or-split)
+
 ;; 文字とかフォントとかの設定
 (defvar-local font-name "Ricty")
 
