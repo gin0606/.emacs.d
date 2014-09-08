@@ -2,13 +2,18 @@
 ;;; Commentary:
 ;;; Code:
 ;; quelpa
+
+(defun my-quelpa-setup ()
+  "Set quelpa config."
+  (defvar quelpa-update-melpa-p nil)
+  (quelpa-self-upgrade)
+  )
 (package-initialize)
 (if (require 'quelpa nil t)
-    (quelpa-self-upgrade)
+    (my-quelpa-setup)
   (with-temp-buffer
     (url-insert-file-contents "https://raw.github.com/quelpa/quelpa/master/bootstrap.el")
     (eval-buffer)))
-(defvar quelpa-update-melpa-p nil)
 
 ;; init-loader
 (quelpa 'init-loader)
