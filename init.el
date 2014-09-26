@@ -52,17 +52,17 @@
 (defvar-local font-name "Ricty")
 
 (set-face-attribute 'default nil
-                    :family font-name
-                    :height 135)
+		    :family font-name
+		    :height 135)
 (set-fontset-font (frame-parameter nil 'font)
-                  'japanese-jisx0208
-                  (cons font-name font-name))
+		  'japanese-jisx0208
+		  (cons font-name "iso10646-1"))
 (set-fontset-font (frame-parameter nil 'font)
                   'japanese-jisx0212
-                  (cons font-name font-name))
+                  (cons font-name "iso10646-1"))
 (set-fontset-font (frame-parameter nil 'font)
-                  'katakana-jisx0201
-                  (cons font-name font-name))
+		  'katakana-jisx0201
+                  (cons font-name "iso10646-1"))
 
 (setq inhibit-startup-message t)	; 起動時のスプラッシュページを表示しない
 (tool-bar-mode 0)			; ツールバー非表示
