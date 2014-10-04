@@ -25,10 +25,6 @@
  '(global-auto-complete-mode t)
  )
 
-(quelpa 'company)
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-
 ;; (custom-set-variables
 ;;  '(ac-modes (append ac-modes
 ;; 		    '(c++-mode)
