@@ -30,6 +30,9 @@
 (quelpa 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+(quelpa 'powerline)
+(powerline-default-theme)
+
 (custom-set-variables '(initial-frame-alist
 			(quote (
 				(fullscreen . maximized)
