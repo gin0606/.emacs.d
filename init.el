@@ -30,17 +30,18 @@
 (quelpa 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; face
 (quelpa 'powerline)
 (powerline-default-theme)
 
+(add-to-list 'load-path "~/.emacs.d/themes")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'tomorrow-night-eighties t)
+
 (custom-set-variables '(initial-frame-alist
-			(quote (
-				(fullscreen . maximized)
-				(foreground-color . "White")
-				(background-color . "Black")
-				(cursor-color . "Gray")
-				(alpha . 90)
-				))))
+                       (quote (
+                               (fullscreen . maximized)
+                               ))))
 (custom-set-variables '(default-frame-alist initial-frame-alist))
 
 (defun other-window-or-split ()
@@ -84,7 +85,6 @@
 (show-paren-mode 1)
 
 (global-hl-line-mode t)
-(set-face-background 'hl-line "#555522")
 
 (setq frame-title-format '("%b"))
 
