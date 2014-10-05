@@ -30,20 +30,6 @@
 (quelpa 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
-;; face
-(quelpa 'powerline)
-(powerline-default-theme)
-
-(add-to-list 'load-path "~/.emacs.d/themes")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'tomorrow-night-eighties t)
-
-(custom-set-variables '(initial-frame-alist
-                       (quote (
-                               (fullscreen . maximized)
-                               ))))
-(custom-set-variables '(default-frame-alist initial-frame-alist))
-
 (defun other-window-or-split ()
   "画面分割していないと画面分割する。画面分割されてると他の画面に移動する."
   (interactive)
