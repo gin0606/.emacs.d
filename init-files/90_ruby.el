@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 (require 'ruby-mode)
+(add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 (add-hook 'ruby-mode-hook
 	  '(lambda ()
 	     (setq tab-width 2)
