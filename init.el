@@ -64,6 +64,8 @@
 
 (column-number-mode t)
 
+;; 設定書かないけどpackageだけ入れたい系のやつ
+(quelpa 'yaml-mode)
 
 (provide 'init)
 ;;; init.el ends here
