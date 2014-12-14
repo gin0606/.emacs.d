@@ -67,5 +67,11 @@
 ;; 設定書かないけどpackageだけ入れたい系のやつ
 (quelpa 'yaml-mode)
 
+(require 'projectile)
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(require 'helm-projectile)
+(helm-projectile-on)
+
 (provide 'init)
 ;;; init.el ends here

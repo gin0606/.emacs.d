@@ -33,6 +33,9 @@ tramp
 # quelpa
 /quelpa/
 
+# projectile
+projectile-bookmarks.eld
+
 ### https://raw.github.com/github/gitignore/fb35fbd51c046aa44979991038c2c78dae8be3bb/Global/OSX.gitignore
 
 .DS_Store
