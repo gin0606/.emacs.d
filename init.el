@@ -51,8 +51,6 @@
 
 (defvar ls-lisp-dirs-first t)           ; ディレクトリから先に表示
 
-(require-final-newline t)
-
 ; 対応するカッコを光らせる
 (show-paren-mode 1)
 
