@@ -69,9 +69,12 @@
 ;; 設定書かないけどpackageだけ入れたい系のやつ
 (quelpa 'yaml-mode)
 
+(quelpa 'projectile)
 (require 'projectile)
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
+
+(quelpa 'helm-projectile)
 (require 'helm-projectile)
 (helm-projectile-on)
 
