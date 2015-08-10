@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/fb35fbd51c046aa44979991038c2c78dae8be3bb/Global/Emacs.gitignore
+### https://raw.github.com/github/gitignore/d4c9696398b91788944faa9365ced70c1764b78b/Global/Emacs.gitignore
 
 # -*- mode: gitignore; -*-
 *~
@@ -30,13 +30,13 @@ tramp
 # AUCTeX auto folder
 /auto/
 
-# quelpa
-/quelpa/
+# cask packages
+.cask/
 
-# projectile
-projectile-bookmarks.eld
+# el-get packages
+el-get/
 
-### https://raw.github.com/github/gitignore/fb35fbd51c046aa44979991038c2c78dae8be3bb/Global/OSX.gitignore
+### https://raw.github.com/github/gitignore/d4c9696398b91788944faa9365ced70c1764b78b/Global/OSX.gitignore
 
 .DS_Store
 .AppleDouble
@@ -48,9 +48,13 @@ Icon
 # Thumbnails
 ._*
 
-# Files that might appear on external disk
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
 .Spotlight-V100
+.TemporaryItems
 .Trashes
+.VolumeIcon.icns
 
 # Directories potentially created on remote AFP share
 .AppleDB
