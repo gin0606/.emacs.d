@@ -18,9 +18,8 @@
 (el-get-lock)
 
 (el-get-bundle 'exec-path-from-shell)
-(exec-path-from-shell-initialize)
-(let ((envs '("PATH")))
-  (exec-path-from-shell-copy-envs envs))
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;; 鬼軍曹
 (el-get-bundle 'drill-instructor)
@@ -30,7 +29,7 @@
 ;; init-loader
 (el-get-bundle 'init-loader)
 (require 'init-loader)
-(init-loader-load "~/.emacs.d/init-files")
+(init-loader-load (locate-user-emacs-file "init-files"))
 (custom-set-variables  '(init-loader-byte-compile t))
 
 ;;; init.el ends here
