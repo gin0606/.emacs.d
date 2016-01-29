@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((flycheck :checksum "2d6816c6aad9a0d0cbb2d82a77dc9dfa6261a89d")
+      '((seq :checksum "1349714b20daed2e62a21ebdd5244acc0ccbef0c")
+        (flycheck :checksum "2d6816c6aad9a0d0cbb2d82a77dc9dfa6261a89d")
         (pkg-info :checksum "4dbe328c9eced79e0004e3fdcd7bfb997a928be5")
         (epl :checksum "a5ad061d0a5eb42f66c384e55d102da7d52c96b0")
         (let-alist :checksum "b87275d7c09c61ec121e8ecdef6df90e12fcc3cd")
